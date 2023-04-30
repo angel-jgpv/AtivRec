@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+    <h1>Exercício 2 - Calculadora de IMC  </h1>
+        <hr>
+        <table border="1">
+            <tr>
+                <td>Intervalos</td>
+                <td>Interpretação</td>
+            </tr>
+            <tr>
+                <td> abaixo de 18.5 </td>
+                <td> abaixo do peso</td>
+            </tr>
+            <tr>
+                <td> entre 18.5 e 24.9 </td>
+                <td> com peso normal</td>
+            </tr>
+            <tr>
+                <td> entre 25.0 e 29.9</td>
+                <td> levemente acima do peso</td>
+            </tr>
+                <td> entre 30.0 e 34.9 </td>
+                <td> Obesidade grau I</td>
+            </tr>
+            <tr>
+                <td> entre 35.0 e 39.9</td>
+                <td>Obesidade grau II (severa)</td>
+            </tr>
+            <tr>
+                <td> acima de 40</td>
+                <td>Obesidade grau III (mórbida)</td>
+            </tr>
+        </table>
+        <br>
+       <fieldset>
+        <legend>IMC</legend>
+         <label for="input">Informe sua altura (M)</label>
+            <input type="number" id="altura" placeholder="9.99" >
+        <label for="input">Informe seu peso (KG)</label>
+            <input type="number" id="peso" placeholder="999.99" >
+            <button onclick="preencherImc()">Calcular</button>
+	        <p id="resultado"></p>
+       </fieldset>
+</body>
+</html>
